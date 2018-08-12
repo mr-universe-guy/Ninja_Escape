@@ -1,0 +1,19 @@
+MaterialDef Spritesheet{
+    MaterialParameters {
+        Texture2D ColorMap
+        Float SizeX
+        Float SizeY
+        Float Position
+    }
+
+    Technique {
+        VertexShader GLSL100: com/mrugames/assets/Spritesheet.vert
+        FragmentShader GLSL100: com/mrugames/assets/Spritesheet.frag
+
+    WorldParameters{
+        WorldViewProjectionMatrix
+    }
+
+    Defines{}
+    }
+}
